@@ -63,3 +63,36 @@
 // console.log(typeof a);
 // console.log(typeof b);
 // console.log(typeof c);
+
+// ===========================
+//       Type Coercion
+// ===========================
+
+// 💡 1. Implicit Type Coercion (Automatic)
+// console.log("5" + 2);
+// console.log(typeof ("5" + 2));
+// console.log("5" - 2);
+// console.log(typeof ("5" - 2));
+// console.log(Boolean(1));
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean("Hi!"));
+
+// 💡 2. Explicit Type Coercion (Manual)
+// console.log(typeof Number("123"));
+// console.log(typeof String(1039));
+// console.log(typeof Boolean(1));
+
+// ===========================
+//     Not a Number (NaN)
+// ===========================
+
+console.log(0 / 0);
+console.log(Number("Hussain"));
+console.log("abc" - 2);
+
+// 💡 Number.isNaN()
+console.log(Number.isNaN(0 / 0));
+console.log(Number.isNaN("Hussain"));
+// ❌ Avoid Global isNaN(), it is wrong approach
+console.log(isNaN("Hussain"));
