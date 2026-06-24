@@ -1,0 +1,11 @@
+.main-heading {
+  background-color: aqua;
+  color: rgb(2, 2, 19);
+  padding: 10px;
+}
+
+.description {
+  background: rgb(190, 33, 59);
+  color: white;
+  padding: 10px;
+}
