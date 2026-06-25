@@ -7,6 +7,7 @@
 // console.warn("This is warning message");
 // console.error("This is error message");
 // console.table(["Hussain", "Suleman", "Zaryab"]);
+// console.dir(document);
 
 // ===========================
 //          Variables
