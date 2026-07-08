@@ -1,0 +1,13 @@
+.parent-div {
+  background-color: bisque;
+  padding: 20px;
+}
+
+.parent-div > p {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.bg-red {
+  background-color: red;
+}
