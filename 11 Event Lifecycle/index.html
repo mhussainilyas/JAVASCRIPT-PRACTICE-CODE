@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Lifecycle</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .grand-parent {
+        background-color: black;
+        padding: 100px;
+      }
+
+      .parent {
+        background-color: yellow;
+        padding: 100px;
+      }
+
+      .child {
+        background-color: red;
+        padding: 100px;
+      }
+
+      .container {
+        color: white;
+        background-color: #2b2b2b;
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+      }
+
+      .box {
+        width: 100px;
+        aspect-ratio: 1/1;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 50px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    <div class="grand-parent">
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    </div> 
+    -->
+
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+    </div>
+    <script src="event-delegation.js"></script>
+  </body>
+</html>
