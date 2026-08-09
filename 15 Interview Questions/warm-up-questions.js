@@ -237,11 +237,18 @@
 // ========================
 // 💡 Create a function that removes duplicate values from an array.
 
+// 1st method
 // function removeDuplicateValue(arr) {
 //   let set = new Set(arr);
 //   return [...set];
 // }
 
+// 2nd method
+// function removeDuplicateValue(arr) {
+//   return arr.filter((item, index) => {
+//     return arr.indexOf(item) === index;
+//   });
+// }
+
 // let res = removeDuplicateValue([1, 2, 2, 3, 5, 2, 4, 1]);
 // console.log(res);
-
