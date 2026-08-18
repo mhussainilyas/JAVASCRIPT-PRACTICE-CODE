@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Hussain",
+    "rollNo": 126177,
+    "isStuden": true,
+    "hobbies": ["coding", "reading", "Sleeping"],
+    "department": "CS"
+  },
+  {
+    "id": 2,
+    "name": "Suleman",
+    "rollNo": 126244,
+    "isStuden": true,
+    "hobbies": ["Playing", "reading", "Sleeping"],
+    "department": "AI"
+  },
+  {
+    "id": 3,
+    "name": "Zaryab",
+    "rollNo": 126117,
+    "isStuden": true,
+    "hobbies": ["coding", "writing", "Sleeping"],
+    "department": "MB"
+  }
+]
