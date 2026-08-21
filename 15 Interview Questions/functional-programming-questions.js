@@ -217,17 +217,15 @@ const diameter = (num) => 2 * num;
 
 // ****** Create your own map function ******
 
-function calculate(logicFunc) {
+Array.prototype.ownMap = function (callback) {
   let newArr = [];
 
   for (let i = 0; i < arr.length; i++) {
-    newArr.push(logicFunc(arr[i]));
+    newArr.push(callback(this[i], i, this));
   }
 
   return newArr;
-}
-
-Array.prototype.ownMap = calculate;
+};
 
 // let res = arr.ownMap(square);
 // let res1 = arr.ownMap(cube);
