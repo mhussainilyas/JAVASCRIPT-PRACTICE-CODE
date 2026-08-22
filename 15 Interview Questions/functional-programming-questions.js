@@ -160,7 +160,7 @@
 // let result = composeStr(capitalizeStr, sanitizeStr, trimingStr);
 // console.log(`compose result = ${result(str)}`);
 
-// ****** Compose (right to left) ******
+// ****** Pipe (left to right) ******
 
 // function pipeStr(...funcs) {
 //   return function (str) {
@@ -190,11 +190,11 @@
 // ======================
 // 💡 How do you implement your own version of .map() function on arrays?
 
-let arr = [1, 2, 3, 4, 5];
+// let arr = [1, 2, 3, 4, 5];
 
-const square = (num) => num * num;
-const cube = (num) => num * num * num;
-const diameter = (num) => 2 * num;
+// const square = (num) => num * num;
+// const cube = (num) => num * num * num;
+// const diameter = (num) => 2 * num;
 
 // ****** Logic Separation ******
 
@@ -217,32 +217,32 @@ const diameter = (num) => 2 * num;
 
 // ****** Create your own map function ******
 
-Array.prototype.ownMap = function (callback) {
-  let newArr = [];
+// Array.prototype.ownMap = function (callback) {
+//   let newArr = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    newArr.push(callback(this[i], i, this));
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     newArr.push(callback(this[i], i, this));
+//   }
 
-  return newArr;
-};
+//   return newArr;
+// };
 
 // let res = arr.ownMap(square);
 // let res1 = arr.ownMap(cube);
 // let res2 = arr.ownMap(diameter);
 
-let res = arr.ownMap((num) => {
-  return num * num;
-});
+// let res = arr.ownMap((num) => {
+//   return num * num;
+// });
 
-let res1 = arr.ownMap((num) => {
-  return 2 * num;
-});
+// let res1 = arr.ownMap((num) => {
+//   return 2 * num;
+// });
 
-let res2 = arr.ownMap((num) => {
-  return num * num * num;
-});
+// let res2 = arr.ownMap((num) => {
+//   return num * num * num;
+// });
 
-console.log(res);
-console.log(res1);
-console.log(res2);
+// console.log(res);
+// console.log(res1);
+// console.log(res2);
